@@ -58,7 +58,7 @@ try:
     conf = configparser.ConfigParser()
     conf.sections()
     # 用config对象读取配置文件
-    conf.read("SignConfig.cfg")
+    conf.read("SignConfig.cf", encoding='UTF-8')
     # 以列表形式返回所有的section
     sections = conf.sections()
     # ##############################用户数据配置#######################################
